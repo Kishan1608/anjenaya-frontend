@@ -1,0 +1,92 @@
+#contact{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contact_header{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 3em;
+    color: var(--color-grey);
+}
+
+.contact_main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.option{
+    min-height: 100px;
+    width: 230px;
+    margin: 50px;
+    display: flex;
+    border: 2px solid var(--color-primary);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.option > a{
+    text-decoration: none;
+    color: black;
+}
+
+.option > a:hover{
+    color: blue;
+    font-weight: 600;
+}
+
+.option.whatsapp > a:hover{
+    color: green;
+    font-weight: 600;
+}
+
+.option.call > a:hover{
+    color: blue;
+    font-weight: 600;
+}
+
+.option.email > a:hover{
+    color: red;
+    font-weight: 600;
+}
+
+.contact-icon {
+    font-size: 25px;
+}
+
+.contact-image{
+    min-height: 500px;
+    width: 350px;
+}
+
+@media screen and (max-width: 900px){
+    .contact_header{
+        font-size: 2em;
+        margin-top: 100px;
+    }
+
+    .contact_main{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .option{
+        padding: 0;
+        width: 200px;
+    }
+
+    .contact-image{
+        min-height: 300px;
+        width: 90%;
+    }
+}
+

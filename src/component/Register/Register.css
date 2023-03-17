@@ -1,0 +1,166 @@
+.register{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 10px;
+    height: 90vh;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.left{
+    height: 100vh;
+}
+
+.left > a{
+    text-decoration: none;
+}
+
+.tag{
+    margin-top: 50px;
+    color: var(--color-primary);
+    font-size: 2em;
+}
+
+.tagline{
+    color: var(--color-grey);
+    margin-bottom: 150px;
+    font-weight: 600;
+    filter: brightness(2.9);
+    font-size: 1.15em;
+}
+
+.text-top{
+    text-align: left;
+    padding: 6px;
+    color: var(--color-grey); 
+    font-weight: 600;
+    filter: brightness(2.9);   
+}
+
+.form-box > h2{
+    padding: 6px;
+    font-size: 2em;
+    color: var(--color-grey);
+    filter: brightness(2.9);
+}
+
+
+.form-box > input{
+    padding: 6px;
+    margin: 10px;
+    margin-top: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    font-size: 20px;
+    color: var(--color-grey);
+    width: 90%;
+    font-weight: 600;
+    filter: brightness(2.9);
+}
+
+.form-box > input::placeholder{
+    color: var(--color-grey);
+}   
+
+.form-box > input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--color-grey);
+    
+}
+
+.form-box > input:focus::placeholder{
+    color: transparent;
+}
+
+.pass-field{
+    display: flex;
+}
+
+.pass-field input{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    font-size: 20px;
+    color: var(--color-grey);
+    width: 90%;
+    font-weight: 600;
+    filter: brightness(2.9);
+}
+
+.pass-field input::placeholder{
+    color: var(--color-grey);
+}
+
+.pass-field input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--color-grey);
+}
+
+.pass-field input:focus::placeholder{
+    color: transparent;
+}
+
+.pass-field .btn-pass-toggle{
+    margin-top: 45px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-register{
+    padding: 15px;
+    cursor: pointer;
+    margin: 4px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-register:hover{
+    background-color: var(--color-secondary);
+}
+
+.text-below{
+    margin: 10px;
+    margin-top: 20px;
+    color: var(--color-grey);
+    filter: brightness(2.9);
+    font-weight: 600;
+}
+
+.error-register{
+    color: rgb(255, 89, 89);
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 900px){
+    .left{
+        display: none;
+    }
+
+    .form-box{
+        width: 80%;
+        height: 80vh;
+    }
+
+    .text-top{
+        margin-top: 20px !important;
+    }
+}

@@ -1,0 +1,112 @@
+.headerLeft{
+    background-image: url(../../assest/green-dust-and-scratches.png);
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.headerLeft > div{
+    padding: 8px 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.headerLeft .nav-link{
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
+.headerLeft a{
+    text-decoration: none;
+}
+
+.headerLeft > div > .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.headerLeft > div > .nav-link:hover{
+    cursor: pointer;
+}
+
+.headerLeft > div > .nav-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu-icon{
+    display: none;
+    background-color: var(--color-primary);
+    color: aliceblue;
+    padding: 15px 20px;
+    font-size: 25px;
+}
+
+.btn-logout{
+    background-color: #ff7675;
+}
+
+.btn-logout:hover{
+    background-color: #d63031;
+}
+
+.btn-signup{
+    background-color: #55efc4;
+}
+
+.btn-signup:hover{
+    background-color: #00b894;
+}
+
+@media screen and (max-width: 900px) {
+    .menu-icon{
+        display: block;
+    }
+
+    .headerLeft{
+        display: none;
+        position: absolute;
+        background-color: var(--color-primary);
+        color: aliceblue;
+        margin: 0;
+        padding: 15px 0;
+    }   
+
+    .headerLeftresponsive{
+        display: block;
+        background-color: var(--color-primary);
+        color: aliceblue;
+        padding: 0;
+        margin: 0;
+    }
+
+    .headerLeftresponsive > div,.nav-link{
+        padding: 10px 10px;
+        text-decoration: none;
+        color: var(--color-white);
+    }
+
+    .headerLeftresponsive > div:hover{
+        color: var(--color-primary);
+    }
+
+    .headerLeftresponsive a{
+        text-decoration: none;
+    }
+
+    .LOGO{
+        display: none;
+    }
+}
+
+
+

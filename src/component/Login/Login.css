@@ -1,0 +1,148 @@
+.login{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.left-login{
+    height: 100vh;
+}
+
+.left-login > a{
+    text-decoration: none;
+}
+
+.tag{
+    margin-top: 100px;
+    color: var(--color-primary);
+    font-size: 2em; 
+}
+
+.tagline{
+    color: var(--color-grey);
+    margin-bottom: 150px;
+    font-weight: 600;
+    filter: brightness(2.9);
+    font-size: 1.15em;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    height: 60vh;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+.text-top-login{
+    margin-top: 40px;
+    text-align: left;
+    padding: 10px;
+    color: var(--color-grey); 
+    font-weight: 600;
+    filter: brightness(2.9);   
+}
+
+.right > input{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    font-size: 20px;
+    color: var(--color-grey);
+    width: 90%;
+    font-weight: 600;
+    filter: brightness(2.9);
+}
+
+.right > input::placeholder{
+    color: var(--color-grey);
+}   
+
+.right > input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--color-grey); 
+}
+
+.right > input:focus::placeholder{
+    color: transparent;
+}
+
+.password-field{
+    display: flex;
+}
+
+.password-field input{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    font-size: 20px;
+    color: var(--color-grey);
+    width: 90%;
+    font-weight: 600;
+    filter: brightness(2.9);
+}
+
+.password-field input::placeholder{
+    color: var(--color-grey);
+}
+
+.password-field input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--color-grey);
+}
+
+.password-field input:focus::placeholder{
+    color: transparent;
+}
+
+.password-field .btn-toggle{
+    margin-top: 45px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-login{
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 60px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-login:hover{
+    background-color: var(--color-secondary);
+}
+
+.error-login{
+    color: rgb(255, 89, 89);
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .left-login{
+        display: none;
+    }
+
+    .right{
+        width: 65%;
+    }
+}
